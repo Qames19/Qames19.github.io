@@ -1,24 +1,63 @@
 body {
-    background-color: grey;
+    background-image: radial-gradient(rgb(105, 66, 66),rgb(136, 104, 105), rgb(153, 150, 148));
 }
 
-.container {
+.flex-center-container {
     width: 100%;
     height: max-content;
     display: flex;
     justify-content: center;
+    padding: 0.25em;
+}
+
+.mb-3 {
+    width: 45vw;
+    height: 85vh;
+}
+
+.card-img-top {
+    width: 25%;
+}
+
+.card {
+    background-color: azure;
+    padding: 1 em;
+}
+
+.navbar {
+    background-image: linear-gradient(rgb(0,0,0),rgb(25,25,25), rgb(50,50,50));
 }
 
 .navbar-brand {
+    cursor: default;
     padding: .5em;
-    background-color: azure;
+    background-color: rgb(153, 150, 148);
     border-radius: 10px;
 }
 
+.col-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.col-info {
+    font-family: Verdana;
+    font-style: oblique ;
+}
 #Logo-Weather {
-    color: skyblue;
+    color: azure;
 }
 
 #Logo-Time {
-    color: slateblue;
+    color: skyblue;
+}
+
+#weather-zip {
+    position: absolute;
+    bottom: 35px;
+}
+
+#weather-submit {
+    position: absolute;
+    bottom: 0px;
 }

@@ -7,42 +7,96 @@
     <link rel="stylesheet" href="./index.css">
     <title>Weather Time</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <div class="container">
+        <div class="flex-center-container">
           <a class="navbar-brand" href="#"><span id="Logo-Weather">Weather</span><span id="Logo-Time">Time</span></a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-          </ul> -->
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <div class="card" style="width: 18rem;">
-        <img src="//cdn.weatherapi.com/weather/64x64/night/113.png" class="card-img-top" alt="...">
+    <div class="flex-center-container">
+      <div class="card mb-3">
+        <div class="flex-center-container">
+          <img src="" id="weather-cta" class="card-img-top">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Weather Report</h5>
-          <p class="card-text">Incididunt occaecat proident culpa ut reprehenderit. Tempor officia ea nisi consequat reprehenderit cillum reprehenderit commodo officia officia ex labore nostrud voluptate. Non labore tempor sint officia commodo fugiat incididunt occaecat irure.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col col-title">
+                Date:
+              </div>
+              <div id="date-info" class="col col-info">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-title">
+                Time:
+              </div>
+              <div id="time-info" class="col col-info">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-title">
+                Conditions:
+              </div>
+              <div id="conditions-info" class="col col-info">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-title">
+                Temperature:
+              </div>
+              <div id="temperature-info" class="col col-info">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-title">
+                Feels Like:
+              </div>
+              <div id="ambient-temp-info" class="col col-info">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-title">
+                Wind
+              </div>
+              <div id="wind-info" class="col col-info">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-title">
+                Humidity
+              </div>
+              <div id="humidity-info" class="col col-info">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-title">
+                Precipitation:
+              </div>
+              <div id="precipitation-info" class="col col-info">
+                
+              </div>
+            </div>
+          </div>
           <input type="text" id="weather-zip" placeholder="ZIP Code"><br><br>
-          <input type="submit" value="submit">
+          <input type="submit" id="weather-submit" value="submit">
         </div>
       </div>
     </div>
@@ -51,4 +105,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   </body>
+  <script src="./index.js"></script>
 </html>

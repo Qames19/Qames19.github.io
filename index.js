@@ -257,9 +257,9 @@ var precipitationInfo = document.getElementById("precipitation-info");
 submitButton.onclick = fillData;
 
 function fillData(){
-    console.log("button clicked");
+    // console.log("button clicked");
     let value = document.getElementById("weather-zip").value;
-    console.log(weather[value]);
+    // console.log(weather[value]);
     imageElement.src = weather[value].current.condition.icon;
     let dateValue = new Date(weather[value].localtime);
     dateInfo.innerText = dateValue.getMonth() + "-" + dateValue.getDate() + "-" + dateValue.getFullYear();
